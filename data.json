@@ -1,0 +1,1215 @@
+{
+ "meta": {
+  "baseCurrency": "EUR",
+  "note": "Ориентировочные значения для демонстрации. Все суммы в EUR."
+ },
+ "currencies": {
+  "rub": {
+   "symbol": "₽",
+   "rate": 100
+  },
+  "eur": {
+   "symbol": "€",
+   "rate": 1
+  },
+  "usd": {
+   "symbol": "$",
+   "rate": 1.08
+  }
+ },
+ "origins": [
+  {
+   "id": "spb",
+   "name": "Санкт-Петербург"
+  },
+  {
+   "id": "moscow",
+   "name": "Москва"
+  },
+  {
+   "id": "ekb",
+   "name": "Екатеринбург"
+  },
+  {
+   "id": "nsk",
+   "name": "Новосибирск"
+  },
+  {
+   "id": "kazan",
+   "name": "Казань"
+  }
+ ],
+ "destinations": [
+  {
+   "id": "tbilisi",
+   "name": "Тбилиси",
+   "country": "Грузия"
+  },
+  {
+   "id": "yerevan",
+   "name": "Ереван",
+   "country": "Армения"
+  },
+  {
+   "id": "almaty",
+   "name": "Алматы",
+   "country": "Казахстан"
+  },
+  {
+   "id": "istanbul",
+   "name": "Стамбул",
+   "country": "Турция"
+  }
+ ],
+ "perPersonExtras": [
+  "insurance"
+ ],
+ "housingLabels": {
+  "studio": "Студия",
+  "flat": "Квартира",
+  "house": "Дом",
+  "apartments": "Апартаменты"
+ },
+ "routes": {
+  "spb-tbilisi": {
+   "distanceKm": 2500,
+   "tickets": {
+    "plane": 190,
+    "ground": 140,
+    "car": 355,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.0
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 1.9
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.6
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 380,
+     "flat": 520,
+     "house": 780,
+     "apartments": 450
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 55,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 90,
+    "child": 54
+   },
+   "extras": {
+    "transfer": 35,
+    "storage": 60,
+    "furniture": 900,
+    "utilities": 80,
+    "insurance": 40,
+    "documentsHelp": 150
+   }
+  },
+  "spb-yerevan": {
+   "distanceKm": 2700,
+   "tickets": {
+    "plane": 185,
+    "ground": 155,
+    "car": 380,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 2.1
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.8
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 350,
+     "flat": 480,
+     "house": 720,
+     "apartments": 420
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 50,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 70,
+    "child": 42
+   },
+   "extras": {
+    "transfer": 30,
+    "storage": 55,
+    "furniture": 850,
+    "utilities": 70,
+    "insurance": 38,
+    "documentsHelp": 130
+   }
+  },
+  "spb-almaty": {
+   "distanceKm": 3900,
+   "tickets": {
+    "plane": 265,
+    "ground": 150,
+    "car": 500,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 2.0
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.6
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 330,
+     "flat": 460,
+     "house": 700,
+     "apartments": 400
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 45,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 60,
+    "child": 36
+   },
+   "extras": {
+    "transfer": 25,
+    "storage": 50,
+    "furniture": 800,
+    "utilities": 60,
+    "insurance": 35,
+    "documentsHelp": 110
+   }
+  },
+  "spb-istanbul": {
+   "distanceKm": 2300,
+   "tickets": {
+    "plane": 225,
+    "ground": 250,
+    "car": 380,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 2.2
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.8
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 450,
+     "flat": 650,
+     "house": 1100,
+     "apartments": 560
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 70,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 140,
+    "child": 84
+   },
+   "extras": {
+    "transfer": 45,
+    "storage": 70,
+    "furniture": 1100,
+    "utilities": 95,
+    "insurance": 60,
+    "documentsHelp": 220
+   }
+  },
+  "moscow-tbilisi": {
+   "distanceKm": 1900,
+   "tickets": {
+    "plane": 170,
+    "ground": 125,
+    "car": 285,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.0
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 1.7
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.4
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 380,
+     "flat": 520,
+     "house": 780,
+     "apartments": 450
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 55,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 90,
+    "child": 54
+   },
+   "extras": {
+    "transfer": 35,
+    "storage": 60,
+    "furniture": 900,
+    "utilities": 80,
+    "insurance": 40,
+    "documentsHelp": 150
+   }
+  },
+  "moscow-yerevan": {
+   "distanceKm": 2150,
+   "tickets": {
+    "plane": 170,
+    "ground": 140,
+    "car": 320,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.0
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 1.9
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.6
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 350,
+     "flat": 480,
+     "house": 720,
+     "apartments": 420
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 50,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 70,
+    "child": 42
+   },
+   "extras": {
+    "transfer": 30,
+    "storage": 55,
+    "furniture": 850,
+    "utilities": 70,
+    "insurance": 38,
+    "documentsHelp": 130
+   }
+  },
+  "moscow-almaty": {
+   "distanceKm": 3300,
+   "tickets": {
+    "plane": 240,
+    "ground": 140,
+    "car": 435,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.0
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 1.8
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.5
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 330,
+     "flat": 460,
+     "house": 700,
+     "apartments": 400
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 45,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 60,
+    "child": 36
+   },
+   "extras": {
+    "transfer": 25,
+    "storage": 50,
+    "furniture": 800,
+    "utilities": 60,
+    "insurance": 35,
+    "documentsHelp": 110
+   }
+  },
+  "moscow-istanbul": {
+   "distanceKm": 1750,
+   "tickets": {
+    "plane": 200,
+    "ground": 225,
+    "car": 320,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 2.0
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.6
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 450,
+     "flat": 650,
+     "house": 1100,
+     "apartments": 560
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 70,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 140,
+    "child": 84
+   },
+   "extras": {
+    "transfer": 45,
+    "storage": 70,
+    "furniture": 1100,
+    "utilities": 95,
+    "insurance": 60,
+    "documentsHelp": 220
+   }
+  },
+  "ekb-tbilisi": {
+   "distanceKm": 2700,
+   "tickets": {
+    "plane": 200,
+    "ground": 145,
+    "car": 375,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 2.0
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.7
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 380,
+     "flat": 520,
+     "house": 780,
+     "apartments": 450
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 55,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 90,
+    "child": 54
+   },
+   "extras": {
+    "transfer": 35,
+    "storage": 60,
+    "furniture": 900,
+    "utilities": 80,
+    "insurance": 40,
+    "documentsHelp": 150
+   }
+  },
+  "ekb-yerevan": {
+   "distanceKm": 3000,
+   "tickets": {
+    "plane": 195,
+    "ground": 165,
+    "car": 415,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 2.2
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.9
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 350,
+     "flat": 480,
+     "house": 720,
+     "apartments": 420
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 50,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 70,
+    "child": 42
+   },
+   "extras": {
+    "transfer": 30,
+    "storage": 55,
+    "furniture": 850,
+    "utilities": 70,
+    "insurance": 38,
+    "documentsHelp": 130
+   }
+  },
+  "ekb-almaty": {
+   "distanceKm": 2000,
+   "tickets": {
+    "plane": 190,
+    "ground": 110,
+    "car": 290,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 2.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 1.4
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.2
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 330,
+     "flat": 460,
+     "house": 700,
+     "apartments": 400
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 45,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 60,
+    "child": 36
+   },
+   "extras": {
+    "transfer": 25,
+    "storage": 50,
+    "furniture": 800,
+    "utilities": 60,
+    "insurance": 35,
+    "documentsHelp": 110
+   }
+  },
+  "ekb-istanbul": {
+   "distanceKm": 3200,
+   "tickets": {
+    "plane": 260,
+    "ground": 295,
+    "car": 480,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 4.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 2.6
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 2.2
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 450,
+     "flat": 650,
+     "house": 1100,
+     "apartments": 560
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 70,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 140,
+    "child": 84
+   },
+   "extras": {
+    "transfer": 45,
+    "storage": 70,
+    "furniture": 1100,
+    "utilities": 95,
+    "insurance": 60,
+    "documentsHelp": 220
+   }
+  },
+  "nsk-tbilisi": {
+   "distanceKm": 4300,
+   "tickets": {
+    "plane": 255,
+    "ground": 185,
+    "car": 550,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 4.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 2.6
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 2.1
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 380,
+     "flat": 520,
+     "house": 780,
+     "apartments": 450
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 55,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 90,
+    "child": 54
+   },
+   "extras": {
+    "transfer": 35,
+    "storage": 60,
+    "furniture": 900,
+    "utilities": 80,
+    "insurance": 40,
+    "documentsHelp": 150
+   }
+  },
+  "nsk-yerevan": {
+   "distanceKm": 4600,
+   "tickets": {
+    "plane": 250,
+    "ground": 210,
+    "car": 590,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 4.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 2.8
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 2.4
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 350,
+     "flat": 480,
+     "house": 720,
+     "apartments": 420
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 50,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 70,
+    "child": 42
+   },
+   "extras": {
+    "transfer": 30,
+    "storage": 55,
+    "furniture": 850,
+    "utilities": 70,
+    "insurance": 38,
+    "documentsHelp": 130
+   }
+  },
+  "nsk-almaty": {
+   "distanceKm": 1700,
+   "tickets": {
+    "plane": 180,
+    "ground": 105,
+    "car": 260,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 2.0
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 1.3
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.1
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 330,
+     "flat": 460,
+     "house": 700,
+     "apartments": 400
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 45,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 60,
+    "child": 36
+   },
+   "extras": {
+    "transfer": 25,
+    "storage": 50,
+    "furniture": 800,
+    "utilities": 60,
+    "insurance": 35,
+    "documentsHelp": 110
+   }
+  },
+  "nsk-istanbul": {
+   "distanceKm": 4700,
+   "tickets": {
+    "plane": 325,
+    "ground": 365,
+    "car": 645,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 5.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 3.2
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 2.7
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 450,
+     "flat": 650,
+     "house": 1100,
+     "apartments": 560
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 70,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 140,
+    "child": 84
+   },
+   "extras": {
+    "transfer": 45,
+    "storage": 70,
+    "furniture": 1100,
+    "utilities": 95,
+    "insurance": 60,
+    "documentsHelp": 220
+   }
+  },
+  "kazan-tbilisi": {
+   "distanceKm": 2100,
+   "tickets": {
+    "plane": 175,
+    "ground": 130,
+    "car": 310,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.0
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 1.8
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.5
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 380,
+     "flat": 520,
+     "house": 780,
+     "apartments": 450
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 55,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 90,
+    "child": 54
+   },
+   "extras": {
+    "transfer": 35,
+    "storage": 60,
+    "furniture": 900,
+    "utilities": 80,
+    "insurance": 40,
+    "documentsHelp": 150
+   }
+  },
+  "kazan-yerevan": {
+   "distanceKm": 2400,
+   "tickets": {
+    "plane": 180,
+    "ground": 150,
+    "car": 350,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 2.0
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.7
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 350,
+     "flat": 480,
+     "house": 720,
+     "apartments": 420
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 50,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 70,
+    "child": 42
+   },
+   "extras": {
+    "transfer": 30,
+    "storage": 55,
+    "furniture": 850,
+    "utilities": 70,
+    "insurance": 38,
+    "documentsHelp": 130
+   }
+  },
+  "kazan-almaty": {
+   "distanceKm": 2700,
+   "tickets": {
+    "plane": 220,
+    "ground": 125,
+    "car": 370,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 2.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 1.6
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.4
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 330,
+     "flat": 460,
+     "house": 700,
+     "apartments": 400
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 45,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 60,
+    "child": 36
+   },
+   "extras": {
+    "transfer": 25,
+    "storage": 50,
+    "furniture": 800,
+    "utilities": 60,
+    "insurance": 35,
+    "documentsHelp": 110
+   }
+  },
+  "kazan-istanbul": {
+   "distanceKm": 2300,
+   "tickets": {
+    "plane": 225,
+    "ground": 250,
+    "car": 380,
+    "childFactor": 0.7,
+    "petFee": {
+     "plane": 70,
+     "ground": 25,
+     "car": 0
+    }
+   },
+   "classMultiplier": {
+    "economy": 1,
+    "comfort": 1.6,
+    "business": 2.8
+   },
+   "baggage": {
+    "handling": 40,
+    "plane": {
+     "freeKgPerPerson": 20,
+     "perKg": 3.5
+    },
+    "ground": {
+     "freeKgPerPerson": 30,
+     "perKg": 2.2
+    },
+    "car": {
+     "freeKgPerPerson": 300,
+     "perKg": 1.8
+    }
+   },
+   "housing": {
+    "rentMonthly": {
+     "studio": 450,
+     "flat": 650,
+     "house": 1100,
+     "apartments": 560
+    },
+    "depositMonths": 2,
+    "temporaryNightly": 70,
+    "temporaryNights": 14
+   },
+   "documents": {
+    "adult": 140,
+    "child": 84
+   },
+   "extras": {
+    "transfer": 45,
+    "storage": 70,
+    "furniture": 1100,
+    "utilities": 95,
+    "insurance": 60,
+    "documentsHelp": 220
+   }
+  }
+ }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Рассчитайте свой переезд</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&family=Manrope:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="app" data-step="1">
+  <header class="head">
+    <h1 id="title" tabindex="-1">Рассчитайте свой переезд</h1>
+    <nav aria-label="Шаги расчёта">
+      <ol class="steps">
+        <li class="is-current" aria-current="step"><span>1</span></li>
+        <li><span>2</span></li>
+        <li><span>3</span></li>
+        <li><span>4</span></li>
+      </ol>
+    </nav>
+  </header>
+
+  <form id="calc" class="panel" novalidate>
+    <section data-step="1" aria-labelledby="s1">
+      <h2 id="s1" class="sub sub--lg">Выберите направление переезда</h2>
+      <section class="field">
+        <label for="from">Город отправления</label>
+        <section class="combo">
+          <input id="from" class="input" type="text" placeholder="Введите город" role="combobox" aria-expanded="false" aria-controls="from-list" aria-autocomplete="list">
+          <ul id="from-list" class="list" role="listbox" hidden></ul>
+        </section>
+      </section>
+      <section class="field">
+        <label for="to">Город назначения</label>
+        <section class="combo">
+          <input id="to" class="input" type="text" placeholder="Введите город" role="combobox" aria-expanded="false" aria-controls="to-list" aria-autocomplete="list">
+          <ul id="to-list" class="list" role="listbox" hidden></ul>
+        </section>
+      </section>
+      <p class="error" id="err1" role="alert" hidden></p>
+      <footer class="actions">
+        <button type="button" class="btn btn--light" data-next>
+          Далее
+          <svg viewBox="0 0 8 12" aria-hidden="true"><path d="M1.5 1.5 6 6l-4.5 4.5"/></svg>
+        </button>
+      </footer>
+    </section>
+
+    <section data-step="2" aria-labelledby="s2" hidden>
+      <h2 id="s2" class="sub">Перевозка</h2>
+      <fieldset>
+        <legend>Количество людей</legend>
+        <section class="row">
+          <span>Количество взрослых</span>
+          <span class="counter" data-name="adults" data-min="1" data-max="9">
+              <button type="button" aria-label="Меньше">−</button>
+              <output>1</output>
+              <button type="button" aria-label="Больше">+</button>
+            </span>
+        </section>
+        <section class="row">
+          <span>Количество детей</span>
+          <span class="counter" data-name="kids" data-min="0" data-max="9">
+              <button type="button" aria-label="Меньше">−</button>
+              <output>0</output>
+              <button type="button" aria-label="Больше">+</button>
+            </span>
+        </section>
+        <section class="row">
+          <span>Количество животных</span>
+          <span class="counter" data-name="pets" data-min="0" data-max="5">
+              <button type="button" aria-label="Меньше">−</button>
+              <output>0</output>
+              <button type="button" aria-label="Больше">+</button>
+            </span>
+        </section>
+      </fieldset>
+      <fieldset>
+        <legend>Как вы планируете добираться?</legend>
+        <label class="opt"><input type="radio" name="transport" value="plane" checked><span>Самолетом</span></label>
+        <label class="opt"><input type="radio" name="transport" value="ground"><span>Поездом или автобусом</span></label>
+        <label class="opt"><input type="radio" name="transport" value="car"><span>На личном автомобиле</span></label>
+      </fieldset>
+      <fieldset id="ticket-class">
+        <legend>Тип билета</legend>
+        <section class="pills">
+          <label class="pill"><input type="radio" name="ticketClass" value="economy" checked><span>Эконом</span></label>
+          <label class="pill"><input type="radio" name="ticketClass" value="comfort"><span>Комфорт</span></label>
+          <label class="pill"><input type="radio" name="ticketClass" value="business"><span>Бизнес</span></label>
+        </section>
+      </fieldset>
+      <section class="row row--baggage">
+        <label for="baggage">Какой у вас багаж?</label>
+        <input id="baggage" class="num" type="number" min="0" max="2000" value="100">
+        <span>кг</span>
+      </section>
+      <footer class="actions">
+        <button type="button" class="btn btn--ghost" data-prev>Назад</button>
+        <button type="button" class="btn btn--light" data-next>
+          Далее
+          <svg viewBox="0 0 8 12" aria-hidden="true"><path d="M1.5 1.5 6 6l-4.5 4.5"/></svg>
+        </button>
+      </footer>
+    </section>
+
+    <section data-step="3" aria-labelledby="s3" hidden>
+      <h2 id="s3" class="sub">Жильё на первое время</h2>
+      <fieldset>
+        <legend>Где будете жить после приезда?</legend>
+        <label class="opt"><input type="radio" name="housing" value="rent" checked><span>Буду арендовать жильё</span></label>
+        <label class="opt"><input type="radio" name="housing" value="temporary"><span>Временное жильё (отель / апартаменты)</span></label>
+        <label class="opt"><input type="radio" name="housing" value="own"><span>Жильё уже есть</span></label>
+      </fieldset>
+      <section class="field" id="housing-type">
+        <h3 id="ht-label">Тип жилья</h3>
+        <section class="select">
+          <button type="button" class="select__btn" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="ht-label ht-val">
+            <span id="ht-val">Студия</span>
+            <svg viewBox="0 0 14 8" aria-hidden="true"><path d="m1 1 6 6 6-6"/></svg>
+          </button>
+          <ul class="list select__list" role="listbox" aria-labelledby="ht-label" hidden>
+            <li role="option" data-value="studio" aria-selected="true">Студия</li>
+            <li role="option" data-value="flat">Квартира</li>
+            <li role="option" data-value="house">Дом</li>
+            <li role="option" data-value="apartments">Апартаменты</li>
+          </ul>
+        </section>
+      </section>
+      <footer class="actions">
+        <button type="button" class="btn btn--ghost" data-prev>Назад</button>
+        <button type="button" class="btn btn--light" data-next>
+          Далее
+          <svg viewBox="0 0 8 12" aria-hidden="true"><path d="M1.5 1.5 6 6l-4.5 4.5"/></svg>
+        </button>
+      </footer>
+    </section>
+
+    <section data-step="4" aria-labelledby="s4" hidden>
+      <h2 id="s4" class="sub">Дополнительные расходы</h2>
+      <fieldset class="checks">
+        <legend class="sr">Дополнительные услуги</legend>
+        <label class="opt opt--check"><input type="checkbox" name="extras" value="transfer"><span>Трансфер из аэропорта или вокзала</span></label>
+        <label class="opt opt--check"><input type="checkbox" name="extras" value="storage"><span>Временное хранение вещей</span></label>
+        <label class="opt opt--check"><input type="checkbox" name="extras" value="furniture"><span>Покупка необходимой мебели</span></label>
+        <label class="opt opt--check"><input type="checkbox" name="extras" value="utilities"><span>Подключение интернета и коммунальных услуг</span></label>
+        <label class="opt opt--check"><input type="checkbox" name="extras" value="insurance"><span>Страхование</span></label>
+        <label class="opt opt--check"><input type="checkbox" name="extras" value="documentsHelp"><span>Помощь с оформлением документов</span></label>
+      </fieldset>
+      <fieldset>
+        <legend>Рассчитать стоимость:</legend>
+        <label class="opt"><input type="radio" name="currency" value="rub"><span>В рублях</span></label>
+        <label class="opt"><input type="radio" name="currency" value="eur" checked><span>В евро</span></label>
+        <label class="opt"><input type="radio" name="currency" value="usd"><span>В долларах</span></label>
+      </fieldset>
+      <footer class="actions">
+        <button type="button" class="btn btn--ghost" data-prev>Назад</button>
+        <button type="button" class="btn btn--light" data-submit>Получить расчет</button>
+      </footer>
+    </section>
+  </form>
+
+  <section id="result" class="panel" aria-labelledby="title" hidden>
+    <p class="route" id="route"></p>
+    <figure class="tag">
+      <img src="gg.svg" class="tag__string" alt="">
+      <p class="tag__sum" id="total">€ 1 900</p>
+      <figcaption class="tag__cap">Ориентировочная итоговая сумма</figcaption>
+    </figure>
+    <dl class="breakdown" id="breakdown"></dl>
+    <footer class="actions">
+      <button type="button" class="btn btn--ghost" id="download">
+        Скачать расчет
+        <svg viewBox="0 0 14 16" aria-hidden="true"><path d="M7 1v10m-4-4 4 4 4-4M1 15h12"/></svg>
+      </button>
+      <button type="button" class="btn btn--ghost" id="reset">Заполнить заново</button>
+    </footer>
+  </section>
+
+  <img src="bag.png" class="bag" alt="">
+</main>
+<script src="script.js"></script>
+</body>
+</html>
